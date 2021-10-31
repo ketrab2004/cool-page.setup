@@ -29,7 +29,7 @@ main {
 @each $name, $size in $breakpoints {
     @media only screen and (min-width: #{$size})
     {
-        main>section, footer>section, header>section {
+        main>section, footer>section, header>nav {
 
             max-width: $size - $size*.125;
 
