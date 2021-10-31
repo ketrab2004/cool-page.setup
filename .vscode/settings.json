@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "src/_framework/": true,
+    ".vscode": true
+  },
+
+  "liveSassCompile.settings.formats": [
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "~/../css/"
+    },
+  ]
+}

@@ -1,0 +1,7 @@
+# ignore stuff or something... 🙃
+
+# ignore vscode stuff
+.vscode/*
+
+# don't ignore settings (important for live sass compiler and stuff)
+!.vscode/settings.json
