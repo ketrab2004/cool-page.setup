@@ -28,9 +28,9 @@ $pageService = new PageService();
 
 <body>
     <header>
-        <section>
+        <nav>
             <?php include "./views/parts/header.phtml"; ?>
-        </section>
+        </nav>
     </header>
 
     <main>
