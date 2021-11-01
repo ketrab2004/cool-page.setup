@@ -20,9 +20,9 @@ $pageService = new PageService();
     <base href="/"> <!-- makes it so that relative links go from the root -->
 
     <!-- main styling for the entire page -->
-    <link href="./style/css/main.min.css" rel="stylesheet">
+    <link href="/style/css/main.min.css" rel="stylesheet">
 
-    <link rel="icon" href="./assets/icons/favicon.ico" type="image/jpg">
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/jpg">
     <title>cool-page-setup</title>
 </head>
 
