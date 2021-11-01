@@ -16,6 +16,12 @@ class PageService
         // redirect url if set, otherwise request uri
         $this->url = $_SERVER["REDIRECT_URL"] ?? $_SERVER['REQUEST_URI'];
 
+        // also use parse_url te remove $_GET variables
+        $this->url = parse_url($this->url, PHP_URL_PATH);
+
+        // remove trailing slashes
+        $this->url = rtrim($this->url, "\/");
+
         // remove baseurl from url, but only first occurance
         $pos = strpos($this->url, self::baseUrl); //https://stackoverflow.com/a/1252710
         if ($pos !== false) { // if found (false is not found)
