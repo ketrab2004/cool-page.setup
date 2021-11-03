@@ -1,5 +1,6 @@
 # cool page setup
 [![GitHub license](https://img.shields.io/github/license/ketrab2004/cool-page.setup?style=plastic)](https://github.com/ketrab2004/cool-page.setup/blob/master/LICENSE) [![GitHub forks](https://img.shields.io/github/forks/ketrab2004/cool-page.setup?style=plastic)](https://github.com/ketrab2004/cool-page.setup/network) [![GitHub stars](https://img.shields.io/github/stars/ketrab2004/cool-page.setup?style=plastic)](https://github.com/ketrab2004/cool-page.setup/stargazers)
+
 based on mini-cms
 
 ## Setup:
