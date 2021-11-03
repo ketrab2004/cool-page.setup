@@ -7,13 +7,13 @@
 !.vscode/settings.json
 
 
-# ignore idea stuff
-.idea/*
-
 # don't ignore scopes (used to hide certain files/folders)
 !.idea/scopes/*
 
 # don't ignore file watchers (used for scss)
 !.idea/file_watchers/*
 !.idea/watcherTasks.xml
+
+# ignore idea stuff
+.idea/*
 
