@@ -6,20 +6,26 @@ based on mini-cms
 ## Setup:
 
 1. Replace cool-page-setup in different files, depending on how your host does stuff
-    * .htaccess
-        - RewriteBase
-        - RewriteRule
-    * ./php/classes/services/PageService.php
-        - protected const baseUrl
+   * .htaccess
+      - RewriteBase
+      - RewriteRule
+   * ./php/classes/services/PageService.php
+      - protected const baseUrl
 
 2. Replace database connection info
-    * in ./php/classes/services/DatabaseService.php
+   * in ./php/classes/services/DatabaseService.php
 
 3. Make a website 😁
 
 ### Visual Studio Code setup:
 1. Check if the correct files/folders are hidden (for example .vscode and .idea)
 2. Check if live sass compiler compiles to the correct directory (```style/css/```) by making a new scss file in ```style/scss/```
+
+### PhpStorm setup:
+1. In the project explorer choose the ```Default``` scope
+   - Check if the correct files/folders are hidden (for example .idea and .vscode)
+2. Turn on the scss file watcher, if it doesn't exist import it from ```.idea/file_watchers/watchers.xml```
+   - Check if the file watcher compiles to the correct directory (```style/css```)
 
 ## Usage:
 
