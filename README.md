@@ -17,6 +17,10 @@ based on mini-cms
 
 3. Make a website 😁
 
+### Visual Studio Code setup:
+1. Check if the correct files/folders are hidden (for example .vscode and .idea)
+2. Check if live sass compiler compiles to the correct directory (```style/css/```) by making a new scss file in ```style/scss/```
+
 ## Usage:
 
 ### Controllers:
