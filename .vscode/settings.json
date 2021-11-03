@@ -1,7 +1,8 @@
 {
   "files.exclude": {
     "src/_framework/": true,
-    ".vscode": true
+    ".vscode": true,
+    ".idea": true
   },
 
   "liveSassCompile.settings.formats": [
