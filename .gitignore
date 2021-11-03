@@ -5,3 +5,10 @@
 
 # don't ignore settings (important for live sass compiler and stuff)
 !.vscode/settings.json
+
+
+# ignore idea stuff
+.idea/*
+
+# don't ignore scopes (used to hide certain files/folders)
+!.idea/scopes/*
