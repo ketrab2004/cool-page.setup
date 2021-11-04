@@ -23,9 +23,9 @@ class PageService
         $this->url = rtrim($this->url, "\/");
 
         // remove baseurl from url, but only first occurance
-        $pos = strpos($this->url, self::baseUrl); //https://stackoverflow.com/a/1252710
+        $pos = strpos($this->url, static::baseUrl); //https://stackoverflow.com/a/1252710
         if ($pos !== false) { // if found (false is not found)
-            $this->url = substr_replace($this->url, '', $pos, strlen(self::baseUrl));
+            $this->url = substr_replace($this->url, '', $pos, strlen(static::baseUrl));
         }
 
         // load url parts with parts of the url, by splitting it at every /
@@ -35,7 +35,7 @@ class PageService
 
     function loadModel()
     {
-        $toLoad = self::findFile(self::modelDir . $this->url);
+        $toLoad = static::findFile(static::modelDir . $this->url);
         if ( $toLoad ) // if truthy
         {
             $this->loadedPage = $toLoad;
@@ -43,7 +43,7 @@ class PageService
         }
         else // did not find file so...
         {
-            $toLoad = self::findFile(self::modelDir . $this->url ."/index"); // ...try to look for index
+            $toLoad = static::findFile(static::modelDir . $this->url ."/index"); // ...try to look for index
 
             if ( $toLoad ) // if truthy
             {
@@ -53,14 +53,14 @@ class PageService
             else // did not find file nor index so 404
             {
                 $this->loadedPage = $toLoad;
-                include self::modelDir . "errors/404.html";
+                include static::modelDir . "errors/404.html";
             }
         }
     }
 
     static function findFile(string $file): ?string
     {
-        foreach (self::acceptedFileTypes as $type)
+        foreach (static::acceptedFileTypes as $type)
         {
             if ( file_exists("$file.$type") )
             {
