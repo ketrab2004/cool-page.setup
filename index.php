@@ -17,8 +17,6 @@ $pageService = new PageService();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <base href="/"> <!-- makes it so that relative links go from the root -->
-
     <!-- main styling for the entire page -->
     <link href="/style/css/main.min.css" rel="stylesheet">
 
