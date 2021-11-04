@@ -2,7 +2,7 @@
 
 class PageService
 {
-    protected const modelDir = "./views/models/";
+    protected const modelDir = "./views/pages/";
     protected const baseUrl = "/"; // a single slash because the url always starts with a slash
 
     protected const acceptedFileTypes = ["php", "phtml", "html"];
