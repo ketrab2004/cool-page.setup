@@ -1,1 +1,15 @@
+<?php
+
+$example = new ExampleController();
+
+echo $example->getExample();
+
+$example->changeExample("321");
+
+?>
+
 <h1>page 3 but in page 2</h1>
+
+<?php
+echo $example->getExample();
+?>
