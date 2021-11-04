@@ -33,11 +33,16 @@ based upon mini-cms
 
 ### Controllers:
 Controllers basically "control" the website.
-They call upon services and use them, then hold the resulting data for models to display.
+They call upon services and use them, then store the resulting data for pages to display.
+Variables should not be defined in controllers, but instead inside models that the controller extends.
 
 ### Models:
-Models are basically pages that create controllers and use them to fill themselves with content.
+Models hold all the variable definitions for controllers.
+They also hold all the getter and setter methods for these variables.
 
 ### Services:
-Services provide services that controllers (or maybe sometimes models) can use.
+Services provide services that controllers (or maybe sometimes pages themselves) can use.
 <i>Like in Roblox 🙂</i>
+
+### Pages:
+Pages create and use controllers to fill themselves with content.
