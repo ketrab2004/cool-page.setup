@@ -12,6 +12,10 @@ spl_autoload_register( function($className) {
     {
 		$found = includeIfExists($className, "./php/classes/services/");
 	}
+    elseif ( strpos($className, 'Model') !== false )
+    {
+		$found = includeIfExists($className, "./php/classes/models/");
+	}
     else 
     {
         $found = includeIfExists($className, "./libraries/");
